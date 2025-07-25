@@ -1,0 +1,91 @@
+body {
+  background-color: #1a1a1a;            /* Fundo escuro da página */
+  color: #f0f0f0;                       /* Cor do texto padrão (claro) */
+  font-family: Arial, sans-serif;       /* Fonte da página */
+  display: flex;                        /* Usa flexbox pra centralizar o conteúdo */
+  justify-content: center;             /* Centraliza horizontalmente */
+  align-items: center;                 /* Centraliza verticalmente */
+  height: 100vh;                        /* Altura total da tela (100% da viewport) */
+  margin: 0;                            /* Remove as margens padrão do navegador */
+}
+
+.card {
+  background-color: #292929;           /* Fundo do cartão (cinza escuro) */
+  padding: 30px;                        /* Espaçamento interno (dentro do cartão) */
+  border-radius: 12px;                 /* Arredonda as bordas do cartão */
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);  /* Sombra suave ao redor */
+  text-align: center;                  /* Centraliza todo o texto dentro do cartão */
+  width: 300px;                         /* Largura fixa do cartão */
+}
+
+.card h1 {
+  margin-bottom: 10px;                 /* Espaço abaixo do título */
+  color: #00ffcc;                      /* Cor especial pro nome (verde claro) */
+}
+
+.card p {
+  margin: 8px 0;                       /* Espaçamento entre as linhas de texto */
+}
+
+/* LINKS */
+
+a {
+  display: block;                      /* Cada link ocupa uma linha inteira */
+  color: #00ffcc;                      /* Cor inicial do link */
+  text-decoration: none;              /* Remove o sublinhado padrão */
+  margin: 6px 0;                       /* Espaçamento entre os links */
+  transition: color 0.3s ease;        /* Transição suave na mudança de cor */
+  cursor: pointer;                    /* Mostra a “mãozinha” ao passar o mouse */
+}
+
+a:hover {
+  color: #00cc99;                     /* Cor do link quando o mouse passa por cima */
+}
+
+a:active {
+  color: #009977;                     /* Cor do link enquanto está sendo clicado */
+}
+
+/* BOTÃO */
+
+button {
+  margin-top: 15px;                   /* Espaço acima do botão */
+  padding: 10px 20px;                 /* Tamanho interno do botão */
+  border: none;                       /* Remove a borda padrão */
+  border-radius: 6px;                 /* Arredonda o botão */
+  background-color: #00ffcc;          /* Cor de fundo do botão */
+  color: #000;                        /* Cor do texto (preto) */
+  font-weight: bold;                  /* Deixa o texto mais forte */
+  cursor: pointer;                    /* Mostra a “mãozinha” no botão */
+  transition: background-color 0.3s ease;  /* Suaviza a mudança de cor ao passar o mouse */
+}
+
+button:hover {
+  background-color: #00cc99;          /* Cor do botão ao passar o mouse */
+}
+/* 🎯 RESPONSIVIDADE PARA CELULAR */
+
+@media (max-width: 600px) {
+  .card {
+    width: 90%;                          /* Ocupa quase toda a largura da tela no celular */
+    padding: 20px;                       /* Reduz o padding pra caber melhor */
+  }
+
+  .card h1 {
+    font-size: 20px;                     /* Diminui o tamanho do título no mobile */
+  }
+
+  .card p {
+    font-size: 14px;                     /* Reduz um pouco o texto */
+  }
+
+  a {
+    font-size: 14px;                     /* Deixa os links menores e mais leves */
+  }
+
+  button {
+    width: 100%;                         /* Botão ocupa toda a largura no celular */
+    padding: 12px 0;                     /* Mais alto, mais fácil de tocar */
+    font-size: 16px;                     /* Texto maior pro dedo acertar fácil */
+  }
+}
