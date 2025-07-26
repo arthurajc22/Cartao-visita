@@ -17,5 +17,5 @@
 <br>
 
 <h2>🔗 Acesse o projeto:</h2>
-<a href="https://arthurajc22.github.io/project-terminal/" target="_blank">👉 Clique aqui para ver online</a>
+<a href="https://arthurajc22.github.io/Cartao-visita/" target="_blank">👉 Clique aqui para ver online</a>
 
